@@ -41,6 +41,7 @@ const DataTableTwo = ({
             ref={tableContainerRef} 
             className="h-full overflow-y-auto overflow-x-auto custom-scrollbar-hide px-4 pr-8"
           >
+
             <table className="w-full text-center border-collapse min-w-[700px] md:min-w-full">
               <thead className="bg-white sticky top-0 z-10 text-[#515151] text-[10px] tracking-widest uppercase font-sans">
                 <tr>
