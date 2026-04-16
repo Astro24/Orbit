@@ -5,7 +5,7 @@ import { IoIosArrowBack } from 'react-icons/io';
 import { MdSearch, MdKeyboardArrowDown } from 'react-icons/md';
 import Pagination from '../../components/pagenumber/pagenumber';
 import DataTableTwo from '../../components/tabletwo/tablet'; 
-import SuccessModal from '../../components/congratulation/Congrat'; // استدعاء المودال
+import SuccessModal from '../../components/congratulation/Congrat'; 
 
 const StaffPage = () => {
   const [isStaffMenuOpen, setIsStaffMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ const StaffPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   
-  // الحالة الخاصة بإظهار مودال التهنئة
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const staffColumns = ["Staff ID", "Full Name", "Department", "Position", "Join Date", "Status"];
@@ -82,7 +82,7 @@ const StaffPage = () => {
                     </div>
                 </div>
 
-                {/* ربط الزر بفتح المودال */}
+
                 <button 
                     onClick={() => setIsModalOpen(true)}
                     className="text-white px-6 md:px-8 py-3 md:py-3.5 rounded-xl text-sm md:text-base font-medium shadow-md hover:opacity-90 active:scale-95 transition-all whitespace-nowrap"
