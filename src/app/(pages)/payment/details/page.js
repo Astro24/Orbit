@@ -1,4 +1,4 @@
-// 1. تأكدي أن اسم الدالة يبدأ بحرف كبير (Staff وليس staff)
+
 function StaffPage() {
   return (
     <div>
@@ -8,5 +8,5 @@ function StaffPage() {
   );
 }
 
-// 2. هذا هو السطر الأهم الذي يفتقده الكود عندك غالباً
+
 export default StaffPage;
