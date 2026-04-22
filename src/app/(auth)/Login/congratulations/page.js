@@ -8,8 +8,9 @@ export default function CongratulationsPage() {
       <div className="bg-white rounded-[32px] p-12 w-full max-w-[420px] flex flex-col items-center text-center shadow-2xl">
         
         <div className="mb-8 relative w-[120px] h-[120px]">
+          {/* تم تعديل اسم الصورة ليعمل بشكل صحيح */}
           <Image 
-            src="/success.png.png" 
+            src="/success.png" 
             alt="Success"
             fill
             className="object-contain"
@@ -25,6 +26,7 @@ export default function CongratulationsPage() {
           You have successfully changed<br />your password.
         </p>
 
+        {/* الرابط يعود لصفحة login بالحرف الصغير */}
         <Link 
           href="/login" 
           className="w-full h-[56px] flex items-center justify-center rounded-xl bg-gradient-to-r from-[#34A8DA] to-[#2B59A7] text-white text-[16px] font-bold shadow-lg hover:opacity-90 transition-all active:scale-[0.95]"

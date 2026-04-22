@@ -13,6 +13,7 @@ export default function LoginPage() {
 
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
+            {/* تأكدي أن الصورة بهذا الاسم في مجلد public */}
             <Image src="/orbit-logo.png" alt="logo" width={46} height={46} />
             <div className="leading-tight">
               <p className="text-[#1976D2] text-[17px] font-bold">Orbit</p>
@@ -22,7 +23,7 @@ export default function LoginPage() {
 
           <Link
             href="/signup"
-            className="px-6 py-2 border border-[#D0D7DE] rounded-md text-[13px] text-[#1976D2]  to-[#2C5DAA] font-semibold hover:bg-white transition-all"
+            className="px-6 py-2 border border-[#D0D7DE] rounded-md text-[13px] text-[#1976D2] font-semibold hover:bg-white transition-all"
           >
             Sign Up
           </Link>
@@ -87,12 +88,13 @@ export default function LoginPage() {
                   Remember me
                 </label>
               </div>
-              <Link href="/forgot-password" size="sm" className="text-[#1976D2] font-bold hover:underline">
+              <Link href="/login/forgot-password" size="sm" className="text-[#1976D2] font-bold hover:underline">
                 I forgot my password
               </Link>
             </div>
 
-            <Link href="/verify" className="block mt-4">
+            {/* تم التعديل هنا: أضفنا Link ليعمل الزر وينقلك لصفحة التحقق */}
+            <Link href="/verify" className="block w-full mt-4">
               <button 
                 type="button" 
                 className="h-[50px] w-full flex items-center justify-center rounded-lg bg-gradient-to-r from-[#2DAAE1] to-[#2C5DAA] text-white text-[15px] font-bold shadow-lg hover:brightness-110 active:scale-[0.98] transition-all"

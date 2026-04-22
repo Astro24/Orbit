@@ -13,7 +13,8 @@ export default function PasswordResetPage() {
   const router = useRouter();
 
   const handleReset = () => {
-    router.push("/congratulations");
+    // الانتقال لصفحة النجاح بعد تغيير الباسورد
+    router.push("/login/congratulations"); 
   };
 
   const EyeOpen = () => (
@@ -124,7 +125,7 @@ export default function PasswordResetPage() {
       </div>
 
       <div className="w-[52%] h-full relative overflow-hidden bg-[#F4F6F8]">
-        <Image src="/forgot-bg.png.png" alt="Recovery" fill className="object-cover" priority />
+        <Image src="/forgot-bg.png" alt="Recovery" fill className="object-cover" priority />
       </div>
 
     </div>

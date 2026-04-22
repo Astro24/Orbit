@@ -26,7 +26,8 @@ export default function EmailVerificationPage() {
   };
 
   const handleVerify = () => {
-    router.push("/password-reset");
+    // التعديل هنا ليتناسب مع المجلد الجديد login
+    router.push("/login/password-reset");
   };
 
   return (
@@ -71,7 +72,7 @@ export default function EmailVerificationPage() {
                 onChange={(e) => handleChange(index, e.target.value)}
                 onKeyDown={(e) => handleKeyDown(index, e)}
                 placeholder="-"
-                className="w-full h-[56px] text-center text-[22px] font-bold text-black border border-[#D0D7DE] rounded-lg focus:border-[#1976D2] outline-none text-black border"
+                className="w-full h-[56px] text-center text-[22px] font-bold text-black border border-[#D0D7DE] rounded-lg focus:border-[#1976D2] outline-none"
               />
             ))}
           </div>
@@ -86,7 +87,8 @@ export default function EmailVerificationPage() {
       </div>
 
       <div className="w-[52%] h-full relative overflow-hidden bg-[#F4F6F8]">
-        <Image src="/forgot-bg.png.png" alt="Recovery" fill className="object-cover" priority />
+        {/* تم تعديل مسار الصورة */}
+        <Image src="/forgot-bg.png" alt="Recovery" fill className="object-cover" priority />
       </div>
 
     </div>
